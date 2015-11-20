@@ -1,5 +1,3 @@
-package com.rostlab.eva;
-
 import java.io.IOException;
 import java.util.concurrent.atomic.AtomicLong;
 
