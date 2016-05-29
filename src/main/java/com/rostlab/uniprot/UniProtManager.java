@@ -1,4 +1,4 @@
-package com.rostlab;
+package com.rostlab.uniprot;
 
 import uk.ac.ebi.kraken.interfaces.uniprot.UniProtEntry;
 import uk.ac.ebi.uniprot.dataservice.client.Client;

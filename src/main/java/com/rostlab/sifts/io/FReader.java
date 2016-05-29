@@ -1,4 +1,4 @@
-package com.rostlab.io;
+package com.rostlab.sifts.io;
 
 import java.io.BufferedReader;
 import java.io.File;

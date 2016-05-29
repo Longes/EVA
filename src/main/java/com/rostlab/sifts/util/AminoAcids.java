@@ -1,4 +1,4 @@
-package com.rostlab.util;
+package com.rostlab.sifts.util;
 
 import java.util.HashMap;
 

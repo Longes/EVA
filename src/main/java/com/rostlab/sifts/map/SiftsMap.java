@@ -1,8 +1,8 @@
-package com.rostlab.sifts;
+package com.rostlab.sifts.map;
 
-import com.rostlab.io.FReader;
-import com.rostlab.io.FWriter;
-import com.rostlab.io.HttpDownloader;
+import com.rostlab.sifts.io.FReader;
+import com.rostlab.sifts.io.FWriter;
+import com.rostlab.sifts.io.HttpDownloader;
 
 import java.io.File;
 import java.util.Collections;
@@ -16,7 +16,7 @@ import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-import com.rostlab.util.AminoAcids;
+import com.rostlab.sifts.util.AminoAcids;
 
 /**
  * Created by Longes
@@ -49,16 +49,16 @@ public class SiftsMap {
 		this.uniprotToPdbPos = new HashMap<Integer, Integer>();
 		this.pdbToUniprotRes = new HashMap<Integer, Character>();
 		this.pdbToPdbRes = new HashMap<Integer, Character>();
-		this.siftsXmlFile = "./data/00_raw/sifts/maps/"+this.pdbId+".xml";
+		this.siftsXmlFile = "./data/00_raw/map/maps/"+this.pdbId+".xml";
 		
 		if (Character.isUpperCase(this.chainId.charAt(0)))
 		{
-			this.siftsFlatFile 	= "./data/01_parsed/sifts/maps/"+this.pdbId+"_"+this.chainId+".txt";
+			this.siftsFlatFile 	= "./data/01_parsed/map/maps/"+this.pdbId+"_"+this.chainId+".txt";
 		}
 		else
 		{
 
-			this.siftsFlatFile 	= "./data/01_parsed/sifts/maps/"+this.pdbId+"-"+this.chainId+".txt";
+			this.siftsFlatFile 	= "./data/01_parsed/map/maps/"+this.pdbId+"-"+this.chainId+".txt";
 		}
 		
 		this.downloadSiftsMap();
@@ -88,7 +88,7 @@ public class SiftsMap {
 	{
 		if (!(new File(this.siftsXmlFile)).exists() && !(new File(this.siftsFlatFile)).exists())
 		{
-			String url = "ftp://ftp.ebi.ac.uk/pub/databases/msd/sifts/xml/"+this.pdbId+".xml.gz";
+			String url = "ftp://ftp.ebi.ac.uk/pub/databases/msd/map/xml/"+this.pdbId+".xml.gz";
 			
 			HttpDownloader.downloadAndDecompressToFile(url, this.siftsXmlFile);
 		}

@@ -1,0 +1,13 @@
+CREATE DATABASE `eva_db` CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+CREATE TABLE IF NOT EXISTS uniprot (
+    'uni_id' VARCHAR,
+    'sequence' VARCHAR,
+    PRIMARY KEY ('uni_id')
+);
+
+CREATE TABLE IF NOT EXISTS pdb (
+    'pdb_id' VARCHAR,
+    'dssp' VARCHAR,
+    PRIMARY KEY ('pdb_id')
+);
