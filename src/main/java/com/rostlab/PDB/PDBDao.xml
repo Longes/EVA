@@ -6,7 +6,7 @@
 
     <resultMap id="pdbEntityResultMap" type="com.rostlab.PDB.PDBEntity">
         <result column="acc_id" property="acc_id" />
-        <result column="dssp" property="dssp" />
+        <result column="sequence" property="sequence" />
     </resultMap>
 
     <select id="findByAccId" resultType="pdbEntityResultMap">
@@ -14,6 +14,6 @@
     </select>
 
     <select id="findByDssp" resultType="pdbEntityResultMap">
-        select acc_id, dssp from pdb where dssp = #{dssp}
+        select acc_id, sequence from pdb where sequence = #{sequence}
     </select>
 </mapper>

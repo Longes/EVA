@@ -1,17 +1,17 @@
-package com.rostlab.PDB;
+package com.rostlab.uniprot;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**
  * Created by Longes on 01.06.2016.
  */
-public class PDBEntityDTO {
+public class UniProtEntityDTO {
 
     protected static ObjectMapper om = new ObjectMapper();
 
     private String acc_id;
 
-    private String dssp;
+    private String sequence;
 
     public String getAccId() {
         return acc_id;
@@ -21,11 +21,11 @@ public class PDBEntityDTO {
         this.acc_id = acc_id;
     }
 
-    public String getDssp() {
-        return dssp;
+    public String getSequence() {
+        return sequence;
     }
 
-    public void setDssp(String dssp) {
-        this.dssp = dssp;
+    public void setSequence(String sequence) {
+        this.sequence = sequence;
     }
 }

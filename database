@@ -8,6 +8,6 @@ CREATE TABLE IF NOT EXISTS uniprot (
 
 CREATE TABLE IF NOT EXISTS pdb (
     'pdb_id' VARCHAR,
-    'dssp' VARCHAR,
+    'sequence' VARCHAR,
     PRIMARY KEY ('pdb_id')
 );
