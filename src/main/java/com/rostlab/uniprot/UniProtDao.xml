@@ -16,4 +16,9 @@
     <select id="findBySequence" resultType="uniProtEntityResultMap">
         select acc_id, sequence from uniprot where sequence = #{sequence}
     </select>
+
+    <insert id = "insert" parameterType = "UniProtEntity">
+        INSERT INTO uniprot (acc_id, sequence)
+        VALUES (#{acc_id}, #{sequence});
+    </insert>
 </mapper>

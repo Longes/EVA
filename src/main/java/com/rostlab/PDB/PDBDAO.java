@@ -11,6 +11,6 @@ public interface PDBDAO {
 
     PDBEntity findByDssp(@Param("dssp") String dssp);
 
-    void insertEntry(@Param("entity") PDBEntityDTO pdbEntityDTO);
+    void insert(@Param("entity") PDBEntity pdbEntity);
 
 }

@@ -6,14 +6,19 @@
 
     <resultMap id="pdbEntityResultMap" type="com.rostlab.PDB.PDBEntity">
         <result column="acc_id" property="acc_id" />
-        <result column="sequence" property="sequence" />
+        <result column="dssp" property="dssp" />
     </resultMap>
 
     <select id="findByAccId" resultType="pdbEntityResultMap">
-        select acc_id, sequence from pdb where acc_id = #{acc_id}
+        select acc_id, dssp from pdb where acc_id = #{acc_id}
     </select>
 
     <select id="findByDssp" resultType="pdbEntityResultMap">
-        select acc_id, sequence from pdb where sequence = #{sequence}
+        select acc_id, dssp from pdb where dssp = #{dssp}
     </select>
+
+    <insert id = "insert" parameterType = "PDBEntity">
+        INSERT INTO pdb (acc_id, dssp)
+        VALUES (#{entity.acc_id}, #{entity.dssp});
+    </insert>
 </mapper>
