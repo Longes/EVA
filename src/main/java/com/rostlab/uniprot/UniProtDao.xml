@@ -19,6 +19,6 @@
 
     <insert id = "insert" parameterType = "UniProtEntity">
         INSERT INTO uniprot (acc_id, sequence)
-        VALUES (#{acc_id}, #{sequence});
+        VALUES (#{entity.acc_id}, #{entity.sequence});
     </insert>
 </mapper>

@@ -25,46 +25,4 @@ import java.util.Locale;
  */
 public class PDBManager {
 
-    ServiceFactory serviceFactoryInstance = Client.getServiceFactoryInstance();
-
-    // UniProtService
-    UniProtService uniprotService = serviceFactoryInstance.getUniProtQueryService();
-
-    // UniParcService
-    UniParcService uniparcService = serviceFactoryInstance.getUniParcQueryService();
-
-    // UniRefService
-    UniRefService unirefService = serviceFactoryInstance.getUniRefQueryService();
-
-    // Blast Service
-    //BlastService blastService = serviceFactoryInstance.getBlastService();
-
-    // UniProt Blast Service
-    UniProtBlastService uniProtBlastService = serviceFactoryInstance.getUniProtBlastService();
-
-    // UniParc Blast Service
-    UniParcBlastService uniParcBlastService = serviceFactoryInstance.getUniParcBlastService();
-
-    // UniRef Blast Service
-    UniRefBlastService uniRefBlastService = serviceFactoryInstance.getUniRefBlastService();
-
-    public QueryResult<UniProtEntry> getByDate() throws ServiceException {
-        uniprotService.start();
-        DateFormat format = new SimpleDateFormat("dd-MM-yyyy", Locale.ENGLISH);
-        Date startDate = null;
-        Date endDate = null;
-        try {
-            startDate = format.parse("01-01-2008");
-            endDate = format.parse("01-12-2008");
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-
-        //Query query = UniProtQueryBuilder.created(startDate, endDate);
-        Query query = UniParcQueryBuilder.accession("A2BC19");
-        QueryResult<UniProtEntry> queryResult = uniprotService.getEntries(query);
-        uniprotService.stop();
-        return queryResult;
     }
-
-}

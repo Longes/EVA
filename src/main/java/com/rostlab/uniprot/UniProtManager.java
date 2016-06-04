@@ -27,6 +27,8 @@ import java.util.Locale;
  */
 public class UniProtManager {
 
+    private UniProtDAO uniProtDAO;
+
     ServiceFactory serviceFactoryInstance = Client.getServiceFactoryInstance();
 
     // UniProtService
@@ -67,6 +69,19 @@ public class UniProtManager {
         QueryResult<UniProtEntry> queryResult = uniprotService.getEntries(query);
         uniprotService.stop();
         return queryResult;
+    }
+
+    private void initiateDatabase() throws ServiceException {
+        uniprotService.start();
+
+        // Search for all Swiss-Prot entries.
+        Query query = UniProtQueryBuilder.swissprot();
+        QueryResult<UniProtEntry> queryResult = uniprotService.getEntries(query);
+        uniprotService.stop();
+        while (queryResult.hasNext()) {
+            UniProtEntity entity = (UniProtEntity) queryResult.next();
+            uniProtDAO.insert(entity);
+        }
     }
 
 }
