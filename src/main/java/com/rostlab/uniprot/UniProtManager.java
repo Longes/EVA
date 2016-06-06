@@ -1,5 +1,6 @@
 package com.rostlab.uniprot;
 
+import com.rostlab.sifts.map.SiftsMap;
 import uk.ac.ebi.kraken.interfaces.uniprot.UniProtEntry;
 import uk.ac.ebi.uniprot.dataservice.client.Client;
 import uk.ac.ebi.uniprot.dataservice.client.QueryResult;
@@ -81,6 +82,7 @@ public class UniProtManager {
         while (queryResult.hasNext()) {
             UniProtEntity entity = (UniProtEntity) queryResult.next();
             uniProtDAO.insert(entity);
+            SiftsMap map = SiftsMap.newMap(entity.acc_id);
         }
     }
 
