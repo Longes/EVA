@@ -23,21 +23,21 @@ public class EvaApplication {
 
     public static void main(String[] args) {
 
-        String resource = "mybatis-config.xml";
+        /*String resource = "mybatis-config.xml";
         InputStream inputStream = null;
         try {
             inputStream = Resources.getResourceAsStream(resource);
         } catch (IOException e) {
             e.printStackTrace();
         }
-        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);*/
 
         String sequence = "MAFSAEDVLKEYDRRRRMEALLLSLYYPNDRKLLDYKEWSPPRVQVECPKAPVEWNNPPS" +
                 "EKGLIVGHFSGIKYKGEKAQASEVDVNKMCCWVSKFKDAMRRYQGIQTCKIPGKVLSDLD" +
                 "AKIKAYNLTVEGVEGFVRYSRVTKQHVAAFLKELRHSKQYENVNLIHYILTDKRVDIQHL" +
                 "EKDLVKDFKALVESAHRMRQGHMINVKYILYQLLKKHGHGPDGPDILTVKTGSKGVLYDD" +
                 "SFRKIYTDLGWKFTPL";
-        PSIPREDrequester psipredRequester = new PSIPREDrequester(email);
+        /*PSIPREDrequester psipredRequester = new PSIPREDrequester(email);
         JpredRequester jpredRequester = new JpredRequester(email);
         try {
             jpredRequester.makeRequest(sequence);
@@ -49,7 +49,7 @@ public class EvaApplication {
             raptorXRequester.makeRequest(sequence);
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        }*/
         UniProtManager uniProtManager = new UniProtManager();
         QueryResult<UniProtEntry> query = null;
         try {

@@ -80,7 +80,8 @@ public class UniProtManager {
         QueryResult<UniProtEntry> queryResult = uniprotService.getEntries(query);
         uniprotService.stop();
         while (queryResult.hasNext()) {
-            UniProtEntity entity = (UniProtEntity) queryResult.next();
+            UniProtEntry entry = queryResult.next();
+            UniProtEntity entity = new UniProtEntity(entry.getUniProtId().toString(), entry.getSequence().toString());
             uniProtDAO.insert(entity);
             SiftsMap map = SiftsMap.newMap(entity.acc_id);
         }
