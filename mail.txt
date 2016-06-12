@@ -1,0 +1,34 @@
+IMAP
+
+Server name:	rostlab.informatik.tu-muenchen.de
+Port:	993 (default for IMAP with SSL)
+User name:	your usual user name, i.e. the one on maple
+Use secure connection:	SSL
+Use secure authentication:	NO (This option may be called password on the Mac.)
+IMAP is used to access your e-mail.
+Secure connection with TLS may also work but is yet untested.
+----------------------------------------------------------------------------------------------
+
+SMTP
+
+Server name:	rostlab.informatik.tu-muenchen.de
+Port:	465 (default for SMTP with SSL, blocked at Columbia)
+466 (non-standard, works from Columbia, should work from anywhere)
+User name:	your usual user name, i.e. the one on maple
+Use secure connection:	SSL
+Security and authentication:	'Use name and password' (This option may be called password on the Mac.)
+SMTP is used for outgoing mail in your e-mail client.
+Secure connection with TLS may also work but is yet untested.
+----------------------------------------------------------------------------------------------
+
+Directory (LDAP)
+
+Hostname:	rostlab.informatik.tu-muenchen.de
+Base DN (search base):	dc=i12,dc=in,dc=tum,dc=de
+Scope:	subtree
+Authentication:	simple
+Port number:	636 (default for LDAP with SSL)
+Bind DN:	uid=your user name,ou=human,ou=people,ou=rost,dc=i12,dc=in,dc=tum,dc=de (all of this string is the "username" in the Mac interface)
+Bind DN (For student workers):	uid=your user name,ou=studentworker,ou=human,ou=people,ou=rost,dc=i12,dc=in,dc=tum,dc=de (all of this string is the "username" in the Mac interface)
+Use secure connection (SSL):	YES (check in)
+Secure connection with TLS should also work but is yet untested.
