@@ -1,0 +1,9 @@
+<orgPdbQuery>
+
+    <queryType>org.pdb.query.simple.UpAccessionIdQuery</queryType>
+
+    <description>Query for a list of Uniprot Accession IDs: P69905</description>
+
+    <accessionIdList>P69905</accessionIdList>
+
+</orgPdbQuery>

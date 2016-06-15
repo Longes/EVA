@@ -1,5 +1,6 @@
 package com.rostlab.uniprot;
 
+import com.rostlab.PDB.PDBEntity;
 import com.rostlab.sifts.map.SiftsMap;
 import uk.ac.ebi.kraken.interfaces.uniprot.UniProtEntry;
 import uk.ac.ebi.uniprot.dataservice.client.Client;
@@ -85,6 +86,10 @@ public class UniProtManager {
             uniProtDAO.insert(entity);
             SiftsMap map = SiftsMap.newMap(entity.acc_id);
         }
+    }
+
+    private void sift(PDBEntity pdbEntity) {
+        SiftsMap map = SiftsMap.newMap(pdbEntity.acc_id);
     }
 
 }
