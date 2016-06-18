@@ -1,6 +1,7 @@
 package com.rostlab;
 
 import com.rostlab.request.JpredRequester;
+import com.rostlab.request.PDBRequester;
 import com.rostlab.request.PSIPREDrequester;
 import com.rostlab.request.RaptorXRequester;
 import com.rostlab.uniprot.UniProtManager;
@@ -55,6 +56,13 @@ public class EvaApplication {
         try {
             query = uniProtManager.getByDate();
         } catch (ServiceException e) {
+            e.printStackTrace();
+        }
+
+        PDBRequester pdbRequester = new PDBRequester();
+        try {
+            pdbRequester.makeRequest("1");
+        } catch (IOException e) {
             e.printStackTrace();
         }
         int i = 0;
