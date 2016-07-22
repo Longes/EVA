@@ -51,26 +51,26 @@ public class EvaApplication {
             raptorXRequester.makeRequest(sequence);
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        }*/
         /*UniProtManager uniProtManager = new UniProtManager();
         QueryResult<UniProtEntry> query = null;
         try {
             query = uniProtManager.getByDate();
         } catch (ServiceException e) {
             e.printStackTrace();
-        }
+        }*/
 
         PDBRequester pdbRequester = new PDBRequester();
         try {
             pdbRequester.makeRequest("1");
         } catch (IOException e) {
             e.printStackTrace();
-        }*/
-        try {
+        }
+        /*try {
             PSIPREDparser.parsePSIPREDMail();
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        }*/
         int i = 0;
     }
 }
