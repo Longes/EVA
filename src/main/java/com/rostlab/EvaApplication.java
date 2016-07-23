@@ -1,5 +1,6 @@
 package com.rostlab;
 
+import com.rostlab.PDB.SiftsConnector;
 import com.rostlab.mail.PSIPREDparser;
 import com.rostlab.request.JpredRequester;
 import com.rostlab.request.PDBRequester;
@@ -60,12 +61,14 @@ public class EvaApplication {
             e.printStackTrace();
         }*/
 
-        PDBRequester pdbRequester = new PDBRequester();
+        /*PDBRequester pdbRequester = new PDBRequester();
         try {
             pdbRequester.makeRequest("1");
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        }*/
+        SiftsConnector connector = new SiftsConnector();
+        String t = connector.sift("1A00");
         /*try {
             PSIPREDparser.parsePSIPREDMail();
         } catch (IOException e) {
