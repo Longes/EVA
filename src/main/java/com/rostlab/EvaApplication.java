@@ -1,5 +1,6 @@
 package com.rostlab;
 
+import com.rostlab.PDB.RostLabSSH;
 import com.rostlab.PDB.SiftsConnector;
 import com.rostlab.mail.PSIPREDparser;
 import com.rostlab.request.JpredRequester;
@@ -67,8 +68,9 @@ public class EvaApplication {
         } catch (IOException e) {
             e.printStackTrace();
         }*/
-        SiftsConnector connector = new SiftsConnector();
-        String t = connector.sift("1A00");
+        //SiftsConnector connector = new SiftsConnector();
+        //String t = connector.sift("1A00");
+        RostLabSSH.connect();
         /*try {
             PSIPREDparser.parsePSIPREDMail();
         } catch (IOException e) {
