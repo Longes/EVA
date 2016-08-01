@@ -53,6 +53,34 @@ public class PDBRequester
 
     }
 
+    public static void requestByPDBID(String pdbId) {
+        String xml = "<orgPdbQuery>\n" +
+                "\n" +
+                "<queryType>org.pdb.query.simple.StructureIdQuery</queryType>\n" +
+                "\n" +
+                "<description>Simple query for a list of PDB IDs (1 IDs) : " + pdbId + "</description>\n" +
+                "\n" +
+                "<structureIdList>" + pdbId + "</structureIdList>\n" +
+                "\n" +
+                "</orgPdbQuery>";
+
+
+        PDBRequester t = new PDBRequester();
+
+        try {
+            List<String> pdbIds = t.postQuery(xml);
+
+            for (String string : pdbIds)
+            {
+                System.out.println(string);
+
+            }
+        } catch (Exception e){
+            e.printStackTrace();
+
+        }
+    }
+
     /** post am XML query (PDB XML query format)  to the RESTful RCSB web service
      *
      * @param xml

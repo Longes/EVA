@@ -1,5 +1,8 @@
 package com.rostlab.sifts.map;
 
+import com.jcraft.jsch.ChannelSftp;
+import com.jcraft.jsch.SftpException;
+import com.rostlab.PDB.RostLabSSH;
 import com.rostlab.sifts.io.FReader;
 import com.rostlab.sifts.io.FWriter;
 import com.rostlab.sifts.io.HttpDownloader;
@@ -53,13 +56,22 @@ public class SiftsMap {
 		
 		if (Character.isUpperCase(this.chainId.charAt(0)))
 		{
-			this.siftsFlatFile 	= "./data/01_parsed/map/maps/"+this.pdbId+"_"+this.chainId+".txt";
-		}
+            ChannelSftp sftpChannel = RostLabSSH.connect();
+            try {
+                this.siftsFlatFile 	= sftpChannel.get("./data/01_parsed/map/maps/"+this.pdbId+"_"+this.chainId+".txt").toString();
+            } catch (SftpException e) {
+                e.printStackTrace();
+            }
+        }
 		else
 		{
-
-			this.siftsFlatFile 	= "./data/01_parsed/map/maps/"+this.pdbId+"-"+this.chainId+".txt";
-		}
+            ChannelSftp sftpChannel = RostLabSSH.connect();
+            try {
+                this.siftsFlatFile 	= sftpChannel.get("./data/01_parsed/map/maps/"+this.pdbId+"-"+this.chainId+".txt").toString();
+            } catch (SftpException e) {
+                e.printStackTrace();
+            }
+        }
 		
 		this.downloadSiftsMap();
 		this.buildMap();

@@ -68,9 +68,8 @@ public class EvaApplication {
         } catch (IOException e) {
             e.printStackTrace();
         }*/
-        //SiftsConnector connector = new SiftsConnector();
-        //String t = connector.sift("1A00");
-        RostLabSSH.connect();
+        SiftsConnector connector = new SiftsConnector();
+        String t = connector.sift("1A00");
         /*try {
             PSIPREDparser.parsePSIPREDMail();
         } catch (IOException e) {

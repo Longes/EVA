@@ -13,14 +13,15 @@ import java.io.InputStreamReader;
  */
 public class RostLabSSH {
 
-    public static void connect() {
+    public static ChannelSftp connect() {
         String user = "agaltsev";
         String password = "superboy";
-        String host = "131.159.28.2";
+        String host = "rostssh.informatik.tu-muenchen.de";
         int port=8574;
 
         String remoteFile="./data/01_parsed/map/maps/";
 
+        ChannelSftp sftpChannel = null;
         try
         {
             JSch jsch = new JSch();
@@ -31,19 +32,19 @@ public class RostLabSSH {
             session.connect();
             System.out.println("Connection established.");
             System.out.println("Crating SFTP Channel.");
-            ChannelSftp sftpChannel = (ChannelSftp) session.openChannel("sftp");
+            sftpChannel = (ChannelSftp) session.openChannel("sftp");
             sftpChannel.connect();
             System.out.println("SFTP Channel created.");
 
-
-            InputStream out= null;
+            /*InputStream out= null;
             out= sftpChannel.get(remoteFile);
             BufferedReader br = new BufferedReader(new InputStreamReader(out));
             String line;
             while ((line = br.readLine()) != null)
                 System.out.println(line);
-            br.close();
+            br.close();*/
         }
         catch(Exception e){System.err.print(e);}
+        return sftpChannel;
     }
 }
