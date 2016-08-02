@@ -2,29 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3adbe5bf-ee58-4746-8c9c-daed35006db5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_dbcp_commons_dbcp_1_2_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_pool_commons_pool_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__java3d_vecmath_1_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_slf4j_impl_2_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_biojava_biojava_alignment_4_2_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_biojava_biojava_core_4_2_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_biojava_biojava_phylo_4_2_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_biojava_biojava_structure_4_2_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_biojava_bytecode_1_9_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_biojava_core_1_9_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_biojava_thirdparty_forester_1_038.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jgrapht_jgrapht_core_0_9_1.xml" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rostlab/EvaApplication.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rostlab/request/JpredRequester.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rostlab/request/PSIPREDrequester.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rostlab/request/RaptorXRequester.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rostlab/request/Requester.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EVA.iml" afterPath="$PROJECT_DIR$/EVA.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/rostlab/PDB/PDBEntity.java" afterPath="$PROJECT_DIR$/src/main/java/com/rostlab/PDB/PDBEntity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
     </list>
     <ignored path="EVA.iws" />
@@ -1125,7 +1108,7 @@
       <workItem from="1469086690301" duration="18000" />
       <workItem from="1469098977612" duration="4176000" />
       <workItem from="1469620984831" duration="3430000" />
-      <workItem from="1469699251067" duration="11437000" />
+      <workItem from="1469699251067" duration="12048000" />
     </task>
     <task id="LOCAL-00001" summary="refactoring, mybatis">
       <created>1464524081643</created>
@@ -1260,11 +1243,18 @@
       <option name="project" value="LOCAL" />
       <updated>1470171112978</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="parsePDB">
+      <created>1470172726346</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1470172726346</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112107000" />
+    <option name="totallyTimeSpent" value="112718000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1333,7 +1323,8 @@
     <MESSAGE value="SSH" />
     <MESSAGE value="PDB" />
     <MESSAGE value="biojava" />
-    <option name="LAST_COMMIT_MESSAGE" value="biojava" />
+    <MESSAGE value="parsePDB" />
+    <option name="LAST_COMMIT_MESSAGE" value="parsePDB" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
