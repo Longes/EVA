@@ -13,13 +13,13 @@ import java.io.InputStreamReader;
  */
 public class RostLabSSH {
 
-    public static ChannelSftp connect() {
+    public static ChannelSftp getPDBFile(String pdbId) {
         String user = "agaltsev";
         String password = "superboy";
         String host = "rostssh.informatik.tu-muenchen.de";
         int port=8574;
 
-        String remoteFile="./data/01_parsed/map/maps/";
+        String remoteFile="/mnt/project/rost_db/data/pdb/entries/";
 
         ChannelSftp sftpChannel = null;
         try
@@ -36,13 +36,13 @@ public class RostLabSSH {
             sftpChannel.connect();
             System.out.println("SFTP Channel created.");
 
-            /*InputStream out= null;
+            InputStream out= null;
             out= sftpChannel.get(remoteFile);
             BufferedReader br = new BufferedReader(new InputStreamReader(out));
             String line;
             while ((line = br.readLine()) != null)
                 System.out.println(line);
-            br.close();*/
+            br.close();
         }
         catch(Exception e){System.err.print(e);}
         return sftpChannel;

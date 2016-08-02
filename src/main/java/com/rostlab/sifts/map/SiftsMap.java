@@ -56,7 +56,7 @@ public class SiftsMap {
 		
 		if (Character.isUpperCase(this.chainId.charAt(0)))
 		{
-            ChannelSftp sftpChannel = RostLabSSH.connect();
+            ChannelSftp sftpChannel = RostLabSSH.getPDBFile(pdbId);
             try {
                 this.siftsFlatFile 	= sftpChannel.get("./data/01_parsed/map/maps/"+this.pdbId+"_"+this.chainId+".txt").toString();
             } catch (SftpException e) {
@@ -65,7 +65,7 @@ public class SiftsMap {
         }
 		else
 		{
-            ChannelSftp sftpChannel = RostLabSSH.connect();
+            ChannelSftp sftpChannel = RostLabSSH.getPDBFile(pdbId);
             try {
                 this.siftsFlatFile 	= sftpChannel.get("./data/01_parsed/map/maps/"+this.pdbId+"-"+this.chainId+".txt").toString();
             } catch (SftpException e) {
