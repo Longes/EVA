@@ -2,8 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3adbe5bf-ee58-4746-8c9c-daed35006db5" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_dbcp_commons_dbcp_1_2_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_pool_commons_pool_1_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__java3d_vecmath_1_3_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_slf4j_impl_2_5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_biojava_biojava_alignment_4_2_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_biojava_biojava_core_4_2_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_biojava_biojava_phylo_4_2_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_biojava_biojava_structure_4_2_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_biojava_bytecode_1_9_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_biojava_core_1_9_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_biojava_thirdparty_forester_1_038.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jgrapht_jgrapht_core_0_9_1.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rostlab/EvaApplication.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rostlab/request/JpredRequester.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rostlab/request/PSIPREDrequester.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rostlab/request/RaptorXRequester.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rostlab/request/Requester.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EVA.iml" afterPath="$PROJECT_DIR$/EVA.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/rostlab/PDB/PDBEntity.java" afterPath="$PROJECT_DIR$/src/main/java/com/rostlab/PDB/PDBEntity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
     </list>
     <ignored path="EVA.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -86,12 +108,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PDBEntity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PDBEntity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rostlab/PDB/PDBEntity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
-              <folding />
+            <state relative-caret-position="527">
+              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -108,10 +132,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="835">
+            <state relative-caret-position="597">
               <caret line="69" column="21" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
               <folding />
             </state>
@@ -163,7 +187,6 @@
         <option value="$PROJECT_DIR$/mybatis-config.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/rostlab/sql/ConnectionFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rostlab/sql/UniProtMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rostlab/PDB/PDBEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rostlab/PDB/PDBEntityDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rostlab/uniprot/UniProtEntityDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rostlab/PDB/PDBDAO.java" />
@@ -184,7 +207,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/rostlab/EvaApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rostlab/sifts/map/SiftsMap.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rostlab/PDB/RostLabSSH.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rostlab/PDB/PDBParser.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rostlab/PDB/PDBEntity.java" />
       </list>
     </option>
   </component>
@@ -1100,7 +1125,7 @@
       <workItem from="1469086690301" duration="18000" />
       <workItem from="1469098977612" duration="4176000" />
       <workItem from="1469620984831" duration="3430000" />
-      <workItem from="1469699251067" duration="10274000" />
+      <workItem from="1469699251067" duration="11437000" />
     </task>
     <task id="LOCAL-00001" summary="refactoring, mybatis">
       <created>1464524081643</created>
@@ -1228,11 +1253,18 @@
       <option name="project" value="LOCAL" />
       <updated>1470144127031</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="biojava">
+      <created>1470171112978</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1470171112978</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110944000" />
+    <option name="totallyTimeSpent" value="112107000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1300,7 +1332,8 @@
     <MESSAGE value="sifts" />
     <MESSAGE value="SSH" />
     <MESSAGE value="PDB" />
-    <option name="LAST_COMMIT_MESSAGE" value="PDB" />
+    <MESSAGE value="biojava" />
+    <option name="LAST_COMMIT_MESSAGE" value="biojava" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1333,13 +1366,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rostlab/request/Requester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="60" column="55" selection-start-line="60" selection-start-column="55" selection-end-line="60" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rostlab/request/PSIPREDrequester.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1656,14 +1682,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rostlab/PDB/PDBEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rostlab/sifts/map/SiftsMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -1690,6 +1708,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rostlab/PDB/PDBParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rostlab/EvaApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
@@ -1702,9 +1728,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="835">
+        <state relative-caret-position="597">
           <caret line="69" column="21" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rostlab/PDB/PDBEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

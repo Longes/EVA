@@ -65,8 +65,13 @@
         </dependency>
         <dependency>
             <groupId>org.biojava</groupId>
-            <artifactId>biojava3-core</artifactId>
-            <version>3.0</version>
+            <artifactId>core</artifactId>
+            <version>1.9.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.biojava</groupId>
+            <artifactId>biojava-structure</artifactId>
+            <version>4.2.4</version>
         </dependency>
     </dependencies>
 
