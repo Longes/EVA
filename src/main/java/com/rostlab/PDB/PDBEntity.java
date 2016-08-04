@@ -36,4 +36,8 @@ public class PDBEntity {
         }
     }
 
+    public void compareRatprorX() {
+
+    }
+
 }
