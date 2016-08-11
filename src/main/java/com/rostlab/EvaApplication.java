@@ -41,14 +41,14 @@ public class EvaApplication {
                 "AKIKAYNLTVEGVEGFVRYSRVTKQHVAAFLKELRHSKQYENVNLIHYILTDKRVDIQHL" +
                 "EKDLVKDFKALVESAHRMRQGHMINVKYILYQLLKKHGHGPDGPDILTVKTGSKGVLYDD" +
                 "SFRKIYTDLGWKFTPL";
-        /*PSIPREDrequester psipredRequester = new PSIPREDrequester(email);
-        JpredRequester jpredRequester = new JpredRequester(email);
+        //PSIPREDrequester psipredRequester = new PSIPREDrequester(email);
+        /*JpredRequester jpredRequester = new JpredRequester(email);
         try {
             jpredRequester.makeRequest(sequence);
         } catch (IOException e) {
             e.printStackTrace();
-        }
-        RaptorXRequester raptorXRequester = new RaptorXRequester(email);
+        }*/
+        /*RaptorXRequester raptorXRequester = new RaptorXRequester(email);
         try {
             raptorXRequester.makeRequest(sequence);
         } catch (IOException e) {
@@ -71,11 +71,11 @@ public class EvaApplication {
         //SiftsConnector connector = new SiftsConnector();
         //String t = connector.sift("1A00");
         //RostLabSSH.getPDBFile("1111");
-        /*try {
+        try {
             PSIPREDparser.parsePSIPREDMail();
         } catch (IOException e) {
             e.printStackTrace();
-        }*/
+        }
         int i = 0;
     }
 }

@@ -12,6 +12,10 @@ import java.util.Scanner;
  */
 public class PSIPREDparser {
 
+    public String querry;
+    public String jpred;
+    public String conf;
+
     public static void parsePSIPREDMail() throws IOException {
         PSIPREDparser parser = new PSIPREDparser("test.txt");
         parser.processLineByLine();
