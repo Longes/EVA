@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3adbe5bf-ee58-4746-8c9c-daed35006db5" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/rostlab/EvaApplication.class" afterPath="$PROJECT_DIR$/target/classes/com/rostlab/EvaApplication.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/rostlab/EvaApplication.java" afterPath="$PROJECT_DIR$/src/main/java/com/rostlab/EvaApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/rostlab/mail/PSIPREDparser.java" afterPath="$PROJECT_DIR$/src/main/java/com/rostlab/mail/PSIPREDparser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/rostlab/PDB/PDBEntity.java" afterPath="$PROJECT_DIR$/src/main/java/com/rostlab/PDB/PDBEntity.java" />
     </list>
     <ignored path="EVA.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,31 +50,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="816">
               <caret line="67" column="65" selection-start-line="67" selection-start-column="65" selection-end-line="67" selection-end-column="65" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#10155#10156#0" expanded="false" />
-                <element signature="e#10201#10202#0" expanded="false" />
-                <element signature="e#10253#10254#0" expanded="false" />
-                <element signature="e#10303#10304#0" expanded="false" />
-                <element signature="e#10354#10355#0" expanded="false" />
-                <element signature="e#10400#10401#0" expanded="false" />
-                <element signature="e#10447#10448#0" expanded="false" />
-                <element signature="e#10489#10490#0" expanded="false" />
-                <element signature="e#10524#10525#0" expanded="false" />
-                <element signature="e#10552#10553#0" expanded="false" />
-                <element signature="e#10589#10590#0" expanded="false" />
-                <element signature="e#10630#10631#0" expanded="false" />
-                <element signature="e#10667#10668#0" expanded="false" />
-                <element signature="e#10696#10697#0" expanded="false" />
-                <element signature="e#10726#10727#0" expanded="false" />
-                <element signature="e#10753#10754#0" expanded="false" />
-                <element signature="e#10783#10784#0" expanded="false" />
-                <element signature="e#10809#10810#0" expanded="false" />
-                <element signature="e#10844#10845#0" expanded="false" />
-                <element signature="e#10875#10876#0" expanded="false" />
-                <element signature="e#10909#10910#0" expanded="false" />
-                <element signature="e#10939#10940#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -84,9 +60,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
               <caret line="21" column="65" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="65" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -96,9 +70,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="816">
               <caret line="62" column="47" selection-start-line="62" selection-start-column="47" selection-end-line="62" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -126,11 +98,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EvaApplication.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="EvaApplication.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rostlab/EvaApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="742">
+            <state relative-caret-position="793">
               <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PDBEntity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rostlab/PDB/PDBEntity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="663">
+              <caret line="44" column="64" selection-start-line="44" selection-start-column="64" selection-end-line="44" selection-end-column="64" />
               <folding />
             </state>
           </provider>
@@ -212,9 +194,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/rostlab/PDB/PDBParser.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/rostlab/PDB/PDBComparator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rostlab/PDB/PDBEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rostlab/EvaApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rostlab/mail/PSIPREDparser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rostlab/PDB/PDBEntity.java" />
       </list>
     </option>
   </component>
@@ -1132,7 +1114,7 @@
       <workItem from="1469620984831" duration="3430000" />
       <workItem from="1469699251067" duration="18528000" />
       <workItem from="1470871391832" duration="1214000" />
-      <workItem from="1471103354175" duration="3066000" />
+      <workItem from="1471103354175" duration="4739000" />
     </task>
     <task id="LOCAL-00001" summary="refactoring, mybatis">
       <created>1464524081643</created>
@@ -1302,11 +1284,18 @@
       <option name="project" value="LOCAL" />
       <updated>1470877672447</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="PSIPRED parser">
+      <created>1471107397997</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1471107397997</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123478000" />
+    <option name="totallyTimeSpent" value="125151000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1319,7 +1308,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32974428" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1399,7 +1388,6 @@
     <MESSAGE value="insert" />
     <MESSAGE value="Sifts" />
     <MESSAGE value="mail" />
-    <MESSAGE value="PSIPRED parser" />
     <MESSAGE value="Starting siftts" />
     <MESSAGE value="sifts" />
     <MESSAGE value="SSH" />
@@ -1408,7 +1396,8 @@
     <MESSAGE value="parsePDB" />
     <MESSAGE value="Compare RaptorX" />
     <MESSAGE value="Compare PSIPRED" />
-    <option name="LAST_COMMIT_MESSAGE" value="Compare PSIPRED" />
+    <MESSAGE value="PSIPRED parser" />
+    <option name="LAST_COMMIT_MESSAGE" value="PSIPRED parser" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1707,48 +1696,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rostlab/sifts/map/SiftsMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="67" column="65" selection-start-line="67" selection-start-column="65" selection-end-line="67" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#10155#10156#0" expanded="false" />
-            <element signature="e#10201#10202#0" expanded="false" />
-            <element signature="e#10253#10254#0" expanded="false" />
-            <element signature="e#10303#10304#0" expanded="false" />
-            <element signature="e#10354#10355#0" expanded="false" />
-            <element signature="e#10400#10401#0" expanded="false" />
-            <element signature="e#10447#10448#0" expanded="false" />
-            <element signature="e#10489#10490#0" expanded="false" />
-            <element signature="e#10524#10525#0" expanded="false" />
-            <element signature="e#10552#10553#0" expanded="false" />
-            <element signature="e#10589#10590#0" expanded="false" />
-            <element signature="e#10630#10631#0" expanded="false" />
-            <element signature="e#10667#10668#0" expanded="false" />
-            <element signature="e#10696#10697#0" expanded="false" />
-            <element signature="e#10726#10727#0" expanded="false" />
-            <element signature="e#10753#10754#0" expanded="false" />
-            <element signature="e#10783#10784#0" expanded="false" />
-            <element signature="e#10809#10810#0" expanded="false" />
-            <element signature="e#10844#10845#0" expanded="false" />
-            <element signature="e#10875#10876#0" expanded="false" />
-            <element signature="e#10909#10910#0" expanded="false" />
-            <element signature="e#10939#10940#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rostlab/PDB/RostLabSSH.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="65" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rostlab/PDB/PDBParser.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -1767,27 +1714,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rostlab/PDB/PDBEntity.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rostlab/EvaApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rostlab/request/PDBRequester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="62" column="47" selection-start-line="62" selection-start-column="47" selection-end-line="62" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        <state relative-caret-position="793">
+          <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1803,10 +1733,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rostlab/EvaApplication.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rostlab/PDB/RostLabSSH.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="742">
-          <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+        <state relative-caret-position="255">
+          <caret line="21" column="65" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rostlab/sifts/map/SiftsMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="67" column="65" selection-start-line="67" selection-start-column="65" selection-end-line="67" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rostlab/request/PDBRequester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="62" column="47" selection-start-line="62" selection-start-column="47" selection-end-line="62" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rostlab/PDB/PDBEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="44" column="64" selection-start-line="44" selection-start-column="64" selection-end-line="44" selection-end-column="64" />
           <folding />
         </state>
       </provider>
