@@ -12,13 +12,13 @@ import java.util.Scanner;
  */
 public class PSIPREDparser {
 
-    public String querry;
-    public String jpred;
-    public String conf;
+    public String querry = "";
+    public String jpred = "";
+    public String conf = "";
+    private Integer count = 0;
 
-    public static void parsePSIPREDMail() throws IOException {
-        PSIPREDparser parser = new PSIPREDparser("test.txt");
-        parser.processLineByLine();
+    public void parsePSIPREDMail() throws IOException {
+        processLineByLine();
         log("Done.");
     }
 
@@ -32,7 +32,7 @@ public class PSIPREDparser {
 
 
     /** Template method that calls {@link #processLine(String)}.  */
-    public final void processLineByLine() throws IOException {
+    public void processLineByLine() throws IOException {
         try (Scanner scanner =  new Scanner(fFilePath, ENCODING.name())){
             scanner.nextLine(); // "Your job has completed successfully and the prediction is summarised below"
             scanner.nextLine(); // "new line"
@@ -60,10 +60,16 @@ public class PSIPREDparser {
         if (scanner.hasNext()){
             //assumes the line has a certain structure
             scanner.next(); // Query:
-            value += scanner.next().trim();
-        }
-        else {
-            log("Empty or invalid line. Unable to process.");
+            if (count.equals(0)) {
+                querry += scanner.next().trim();
+            } else if (count.equals(1)) {
+                jpred += scanner.next().trim();
+            } else if (count.equals(2)) {
+                conf += scanner.next().trim();
+            } else {
+                count = -1;
+            }
+            count++;
         }
     }
 

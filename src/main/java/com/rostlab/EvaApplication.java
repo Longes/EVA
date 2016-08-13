@@ -71,8 +71,9 @@ public class EvaApplication {
         //SiftsConnector connector = new SiftsConnector();
         //String t = connector.sift("1A00");
         //RostLabSSH.getPDBFile("1111");
+        PSIPREDparser parser = new PSIPREDparser("test.txt");
         try {
-            PSIPREDparser.parsePSIPREDMail();
+            parser.parsePSIPREDMail();
         } catch (IOException e) {
             e.printStackTrace();
         }
