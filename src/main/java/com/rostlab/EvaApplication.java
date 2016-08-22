@@ -48,12 +48,12 @@ public class EvaApplication {
         } catch (IOException e) {
             e.printStackTrace();
         }*/
-        /*RaptorXRequester raptorXRequester = new RaptorXRequester(email);
+        RaptorXRequester raptorXRequester = new RaptorXRequester(email);
         try {
             raptorXRequester.makeRequest(sequence);
         } catch (IOException e) {
             e.printStackTrace();
-        }*/
+        }
         /*UniProtManager uniProtManager = new UniProtManager();
         QueryResult<UniProtEntry> query = null;
         try {
@@ -71,12 +71,12 @@ public class EvaApplication {
         //SiftsConnector connector = new SiftsConnector();
         //String t = connector.sift("1A00");
         //RostLabSSH.getPDBFile("1111");
-        PSIPREDparser parser = new PSIPREDparser("test.txt");
+        /*PSIPREDparser parser = new PSIPREDparser("test.txt");
         try {
             parser.parsePSIPREDMail();
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        }*/
         int i = 0;
     }
 }
