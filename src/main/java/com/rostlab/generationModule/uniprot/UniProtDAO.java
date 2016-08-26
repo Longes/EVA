@@ -1,4 +1,4 @@
-package com.rostlab.uniprot;
+package com.rostlab.generationModule.uniprot;
 
 import org.apache.ibatis.annotations.Param;
 

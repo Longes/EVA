@@ -1,4 +1,4 @@
-package com.rostlab.uniprot;
+package com.rostlab.generationModule.uniprot;
 
 /**
  * Created by Longes on 26.05.2016.

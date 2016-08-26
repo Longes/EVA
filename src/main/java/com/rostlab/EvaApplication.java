@@ -1,22 +1,8 @@
 package com.rostlab;
 
-import com.rostlab.PDB.RostLabSSH;
-import com.rostlab.PDB.SiftsConnector;
-import com.rostlab.mail.PSIPREDparser;
-import com.rostlab.request.JpredRequester;
-import com.rostlab.request.PDBRequester;
-import com.rostlab.request.PSIPREDrequester;
 import com.rostlab.request.RaptorXRequester;
-import com.rostlab.uniprot.UniProtManager;
-import org.apache.ibatis.io.Resources;
-import org.apache.ibatis.session.SqlSessionFactory;
-import org.apache.ibatis.session.SqlSessionFactoryBuilder;
-import uk.ac.ebi.kraken.interfaces.uniprot.UniProtEntry;
-import uk.ac.ebi.uniprot.dataservice.client.QueryResult;
-import uk.ac.ebi.uniprot.dataservice.client.exception.ServiceException;
 
 import java.io.IOException;
-import java.io.InputStream;
 
 /**
  * Created by Longes

@@ -1,4 +1,4 @@
-package com.rostlab.uniprot;
+package com.rostlab.generationModule.uniprot;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 

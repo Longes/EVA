@@ -1,4 +1,4 @@
-package com.rostlab.uniprot;
+package com.rostlab.generationModule.uniprot;
 
 import com.rostlab.PDB.PDBEntity;
 import com.rostlab.sifts.map.SiftsMap;
@@ -6,7 +6,6 @@ import uk.ac.ebi.kraken.interfaces.uniprot.UniProtEntry;
 import uk.ac.ebi.uniprot.dataservice.client.Client;
 import uk.ac.ebi.uniprot.dataservice.client.QueryResult;
 import uk.ac.ebi.uniprot.dataservice.client.ServiceFactory;
-import uk.ac.ebi.uniprot.dataservice.client.alignment.blast.BlastService;
 import uk.ac.ebi.uniprot.dataservice.client.alignment.blast.UniParcBlastService;
 import uk.ac.ebi.uniprot.dataservice.client.alignment.blast.UniProtBlastService;
 import uk.ac.ebi.uniprot.dataservice.client.alignment.blast.UniRefBlastService;

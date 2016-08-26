@@ -1,6 +1,6 @@
 package com.rostlab.sql;
 
-import com.rostlab.uniprot.UniProtEntity;
+import com.rostlab.generationModule.uniprot.UniProtEntity;
 
 import java.sql.*;
 
