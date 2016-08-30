@@ -53,14 +53,14 @@ public class UniProtManager {
     // UniRef Blast Service
     UniRefBlastService uniRefBlastService = serviceFactoryInstance.getUniRefBlastService();
 
-    public QueryResult<UniProtEntry> getByDate() throws ServiceException {
+    public QueryResult<UniProtEntry> getByDate(String start, String end) throws ServiceException {
         uniprotService.start();
         DateFormat format = new SimpleDateFormat("dd-MM-yyyy", Locale.ENGLISH);
         Date startDate = null;
         Date endDate = null;
         try {
-            startDate = format.parse("01-01-2008");
-            endDate = format.parse("01-12-2008");
+            startDate = format.parse(start);
+            endDate = format.parse(end);
         } catch (ParseException e) {
             e.printStackTrace();
         }
@@ -72,7 +72,7 @@ public class UniProtManager {
         return queryResult;
     }
 
-    private void initiateDatabase() throws ServiceException {
+    public void initiateDatabase() throws ServiceException {
         uniprotService.start();
 
         // Search for all Swiss-Prot entries.

@@ -1,5 +1,8 @@
 package com.rostlab.generationModule;
 
+import com.rostlab.generationModule.uniprot.UniProtManager;
+import uk.ac.ebi.uniprot.dataservice.client.exception.ServiceException;
+
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
@@ -24,7 +27,16 @@ public class generationMain {
         }
     }
 
-    public void downloadEntries() {
-
+    public void downloadEntries(boolean fromSwissProt) {
+        UniProtManager uniProtManager = new UniProtManager();
+        if (fromSwissProt) {
+            try {
+                uniProtManager.initiateDatabase();
+            } catch (ServiceException e) {
+                e.printStackTrace();
+            }
+        } else {
+            ;
+        }
     }
 }
