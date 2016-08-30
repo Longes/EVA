@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.rostlab.generationModule.uniprot.UniProtDAO">
 
-    <resultMap id="pdbEntityResultMap" type="com.rostlab.PDB.PDBEntity">
+    <resultMap id="pdbEntityResultMap" type="com.rostlab.generationModule.PDB.PDBEntity">
         <result column="acc_id" property="acc_id" />
         <result column="dssp" property="dssp" />
     </resultMap>

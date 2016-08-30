@@ -1,4 +1,4 @@
-package com.rostlab.PDB;
+package com.rostlab.generationModule.PDB;
 
 import com.jcraft.jsch.ChannelSftp;
 import com.jcraft.jsch.JSch;

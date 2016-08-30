@@ -1,6 +1,6 @@
 package com.rostlab.generationModule.uniprot;
 
-import com.rostlab.PDB.PDBEntity;
+import com.rostlab.generationModule.PDB.PDBEntity;
 import com.rostlab.sifts.map.SiftsMap;
 import uk.ac.ebi.kraken.interfaces.uniprot.UniProtEntry;
 import uk.ac.ebi.uniprot.dataservice.client.Client;

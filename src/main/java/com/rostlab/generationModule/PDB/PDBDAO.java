@@ -1,4 +1,4 @@
-package com.rostlab.PDB;
+package com.rostlab.generationModule.PDB;
 
 import org.apache.ibatis.annotations.Param;
 

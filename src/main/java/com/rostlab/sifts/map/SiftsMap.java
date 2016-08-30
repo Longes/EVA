@@ -2,7 +2,7 @@ package com.rostlab.sifts.map;
 
 import com.jcraft.jsch.ChannelSftp;
 import com.jcraft.jsch.SftpException;
-import com.rostlab.PDB.RostLabSSH;
+import com.rostlab.generationModule.PDB.RostLabSSH;
 import com.rostlab.sifts.io.FReader;
 import com.rostlab.sifts.io.FWriter;
 import com.rostlab.sifts.io.HttpDownloader;
