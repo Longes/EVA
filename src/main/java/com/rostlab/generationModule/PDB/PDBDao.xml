@@ -6,15 +6,15 @@
 
     <resultMap id="pdbEntityResultMap" type="com.rostlab.generationModule.PDB.PDBEntity">
         <result column="acc_id" property="acc_id" />
-        <result column="dssp" property="dssp" />
+        <result column="file" property="file" />
     </resultMap>
 
     <select id="findByAccId" resultType="pdbEntityResultMap">
-        select acc_id, dssp from pdb where acc_id = #{acc_id}
+        select acc_id, file from pdb where acc_id = #{acc_id}
     </select>
 
     <select id="findByDssp" resultType="pdbEntityResultMap">
-        select acc_id, dssp from pdb where dssp = #{dssp}
+        select acc_id, file from pdb where dssp = #{dssp}
     </select>
 
     <insert id = "insert" parameterType = "PDBEntity">
