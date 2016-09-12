@@ -11,7 +11,7 @@ public class PDBEntityDTO {
 
     private String acc_id;
 
-    private String dssp;
+    private String file;
 
     public String getAccId() {
         return acc_id;
@@ -21,11 +21,11 @@ public class PDBEntityDTO {
         this.acc_id = acc_id;
     }
 
-    public String getDssp() {
-        return dssp;
+    public String getFile() {
+        return file;
     }
 
-    public void setDssp(String dssp) {
-        this.dssp = dssp;
+    public void setFile(String file) {
+        this.file = file;
     }
 }

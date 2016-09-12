@@ -31,25 +31,21 @@ public class PDBRequester
         return new String(encoded, Charset.defaultCharset());
     }
 
-    public static void makeRequest(String accId) throws IOException {
+    public static List<String> makeRequest(String accId) throws IOException {
 
-        String xml = readFile("PDBRequest.xml");
+        String xml = "<orgPdbQuery>\n" +
+                "\n" +
+                "    <queryType>org.pdb.query.simple.UpAccessionIdQuery</queryType>\n" +
+                "\n" +
+                "    <description>Query for a list of Uniprot Accession IDs: "+ accId +"</description>\n" +
+                "\n" +
+                "    <accessionIdList>"+ accId +"</accessionIdList>\n" +
+                "\n" +
+                "</orgPdbQuery>";
 
 
         PDBRequester t = new PDBRequester();
-
-        try {
-            List<String> pdbIds = t.postQuery(xml);
-
-            for (String string : pdbIds)
-            {
-                System.out.println(string);
-
-            }
-        } catch (Exception e){
-            e.printStackTrace();
-
-        }
+        return t.postQuery(xml);
 
     }
 

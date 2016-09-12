@@ -13,10 +13,6 @@
         select acc_id, file from pdb where acc_id = #{acc_id}
     </select>
 
-    <select id="findByDssp" resultType="pdbEntityResultMap">
-        select acc_id, file from pdb where dssp = #{dssp}
-    </select>
-
     <insert id = "insert" parameterType = "PDBEntity">
         INSERT INTO pdb (acc_id, dssp)
         VALUES (#{entity.acc_id}, #{entity.dssp});

@@ -9,8 +9,6 @@ public interface PDBDAO {
 
     PDBEntity findByAccId(@Param("acc_id") String acc_id);
 
-    PDBEntity findByDssp(@Param("dssp") String dssp);
-
     void insert(@Param("entity") PDBEntity pdbEntity);
 
 }

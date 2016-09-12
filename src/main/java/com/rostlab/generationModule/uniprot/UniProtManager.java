@@ -53,6 +53,8 @@ public class UniProtManager {
     // UniRef Blast Service
     UniRefBlastService uniRefBlastService = serviceFactoryInstance.getUniRefBlastService();
 
+    public QueryResult<UniProtEntry> queryResult;
+
     public QueryResult<UniProtEntry> getByDate(String start, String end) throws ServiceException {
         uniprotService.start();
         DateFormat format = new SimpleDateFormat("dd-MM-yyyy", Locale.ENGLISH);
@@ -77,13 +79,12 @@ public class UniProtManager {
 
         // Search for all Swiss-Prot entries.
         Query query = UniProtQueryBuilder.swissprot();
-        QueryResult<UniProtEntry> queryResult = uniprotService.getEntries(query);
+        queryResult = uniprotService.getEntries(query);
         uniprotService.stop();
         while (queryResult.hasNext()) {
             UniProtEntry entry = queryResult.next();
             UniProtEntity entity = new UniProtEntity(entry.getUniProtId().toString(), entry.getSequence().toString());
             uniProtDAO.insert(entity);
-            SiftsMap map = SiftsMap.newMap(entity.acc_id);
         }
     }
 
