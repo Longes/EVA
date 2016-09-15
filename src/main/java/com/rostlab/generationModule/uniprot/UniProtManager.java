@@ -1,6 +1,8 @@
 package com.rostlab.generationModule.uniprot;
 
+import com.rostlab.generationModule.PDB.PDBDAO;
 import com.rostlab.generationModule.PDB.PDBEntity;
+import com.rostlab.requestModule.request.PDBRequester;
 import com.rostlab.sifts.map.SiftsMap;
 import uk.ac.ebi.kraken.interfaces.uniprot.UniProtEntry;
 import uk.ac.ebi.uniprot.dataservice.client.Client;
@@ -17,10 +19,12 @@ import uk.ac.ebi.uniprot.dataservice.client.uniprot.UniProtService;
 import uk.ac.ebi.uniprot.dataservice.client.uniref.UniRefService;
 import uk.ac.ebi.uniprot.dataservice.query.Query;
 
+import java.io.IOException;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 import java.util.Locale;
 
 /**
@@ -29,6 +33,8 @@ import java.util.Locale;
 public class UniProtManager {
 
     private UniProtDAO uniProtDAO;
+
+    private PDBDAO pdbdao;
 
     ServiceFactory serviceFactoryInstance = Client.getServiceFactoryInstance();
 
@@ -81,9 +87,16 @@ public class UniProtManager {
         Query query = UniProtQueryBuilder.swissprot();
         queryResult = uniprotService.getEntries(query);
         uniprotService.stop();
+        PDBRequester pdbRequester = new PDBRequester();
         while (queryResult.hasNext()) {
             UniProtEntry entry = queryResult.next();
             UniProtEntity entity = new UniProtEntity(entry.getUniProtId().toString(), entry.getSequence().toString());
+            try {
+                List<String> pdbIds = pdbRequester.makeRequest(entity.acc_id);
+                entity.pdb_ids = pdbIds.toString();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
             uniProtDAO.insert(entity);
         }
     }

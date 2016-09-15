@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3adbe5bf-ee58-4746-8c9c-daed35006db5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/rostlab/generationModule/uniprot/UniProtDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/rostlab/generationModule/uniprot/UniProtDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/rostlab/generationModule/uniprot/UniProtDao.xml" afterPath="$PROJECT_DIR$/src/main/java/com/rostlab/generationModule/uniprot/UniProtDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/rostlab/generationModule/uniprot/UniProtEntity.java" afterPath="$PROJECT_DIR$/src/main/java/com/rostlab/generationModule/uniprot/UniProtEntity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/rostlab/generationModule/uniprot/UniProtEntityDTO.java" afterPath="$PROJECT_DIR$/src/main/java/com/rostlab/generationModule/uniprot/UniProtEntityDTO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/rostlab/generationModule/generationMain.java" afterPath="$PROJECT_DIR$/src/main/java/com/rostlab/generationModule/generationMain.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/rostlab/generationModule/uniprot/UniProtManager.java" afterPath="$PROJECT_DIR$/src/main/java/com/rostlab/generationModule/uniprot/UniProtManager.java" />
     </list>
     <ignored path="EVA.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,11 +35,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="generationMain.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="generationMain.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rostlab/generationModule/generationMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="36" column="32" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
+            <state relative-caret-position="425">
+              <caret line="34" column="50" selection-start-line="34" selection-start-column="50" selection-end-line="34" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -50,8 +48,8 @@
       <file leaf-file-name="PDBManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rostlab/generationModule/PDB/PDBManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+            <state relative-caret-position="255">
+              <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -72,8 +70,8 @@
       <file leaf-file-name="UniProtManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rostlab/generationModule/uniprot/UniProtManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+            <state relative-caret-position="589">
+              <caret line="94" column="78" selection-start-line="94" selection-start-column="78" selection-end-line="94" selection-end-column="78" />
               <folding />
             </state>
           </provider>
@@ -109,7 +107,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UniProtDao.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UniProtDao.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rostlab/generationModule/uniprot/UniProtDao.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
@@ -210,8 +208,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/rostlab/generationModule/uniprot/generationMain.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rostlab/generationModule/uaccid_generation" />
         <option value="$PROJECT_DIR$/src/main/java/com/rostlab/EvaApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rostlab/generationModule/generationMain.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rostlab/generationModule/uniprot/UniProtManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rostlab/request/PDBRequester.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rostlab/generationModule/PDB/PDBDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rostlab/generationModule/PDB/PDBEntityDTO.java" />
@@ -223,6 +219,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/rostlab/generationModule/uniprot/UniProtEntityDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rostlab/generationModule/uniprot/UniProtDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rostlab/generationModule/uniprot/UniProtDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rostlab/generationModule/uniprot/UniProtManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rostlab/generationModule/generationMain.java" />
       </list>
     </option>
   </component>
@@ -1144,7 +1142,7 @@
       <workItem from="1473083896879" duration="5985000" />
       <workItem from="1473759045308" duration="2639000" />
       <workItem from="1473794088965" duration="328000" />
-      <workItem from="1473855611539" duration="4540000" />
+      <workItem from="1473855611539" duration="4765000" />
     </task>
     <task id="LOCAL-00001" summary="refactoring, mybatis">
       <created>1464524081643</created>
@@ -1398,11 +1396,18 @@
       <option name="project" value="LOCAL" />
       <updated>1473946399713</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="remove PDB database">
+      <created>1473950547853</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1473950547853</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="156719000" />
+    <option name="totallyTimeSpent" value="156944000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1509,7 +1514,8 @@
     <MESSAGE value="generation - UniProt" />
     <MESSAGE value="PDB" />
     <MESSAGE value="send requests" />
-    <option name="LAST_COMMIT_MESSAGE" value="send requests" />
+    <MESSAGE value="remove PDB database" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove PDB database" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1833,14 +1839,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rostlab/generationModule/uniprot/UniProtManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rostlab/generationModule/PDB/PDBEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1849,32 +1847,6 @@
             <element signature="e#492#493#0" expanded="true" />
             <element signature="e#528#529#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rostlab/generationModule/PDB/PDBManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rostlab/generationModule/generationMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="36" column="32" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rostlab/requestModule/requestMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1907,6 +1879,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rostlab/requestModule/requestMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rostlab/generationModule/PDB/PDBManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rostlab/generationModule/uniprot/UniProtDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -1925,6 +1915,22 @@
             <marker date="1473950534909" expanded="true" signature="913:1005" placeholder="INSERT INTO uniprot... " />
             <marker date="1473950534909" expanded="true" signature="1085:1181" placeholder="UPDATE unipr... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rostlab/generationModule/uniprot/UniProtManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="94" column="78" selection-start-line="94" selection-start-column="78" selection-end-line="94" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rostlab/generationModule/generationMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="34" column="50" selection-start-line="34" selection-start-column="50" selection-end-line="34" selection-end-column="50" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -30,11 +30,9 @@ public class generationMain {
 
     public void downloadEntries(boolean fromSwissProt) {
         UniProtManager uniProtManager = new UniProtManager();
-        PDBManager pdbManager = new PDBManager();
         if (fromSwissProt) {
             try {
                 uniProtManager.initiateDatabase();
-                pdbManager.initiateDatabase(uniProtManager.queryResult);
             } catch (ServiceException e) {
                 e.printStackTrace();
             }
