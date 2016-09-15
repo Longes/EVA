@@ -13,6 +13,8 @@ public class UniProtEntityDTO {
 
     private String sequence;
 
+    private String pdb_ids;
+
     public String getAccId() {
         return acc_id;
     }
@@ -27,5 +29,13 @@ public class UniProtEntityDTO {
 
     public void setSequence(String sequence) {
         this.sequence = sequence;
+    }
+
+    public String getPdbIds() {
+        return pdb_ids;
+    }
+
+    public void setPdbIds(String pdb_ids) {
+        this.pdb_ids = pdb_ids;
     }
 }

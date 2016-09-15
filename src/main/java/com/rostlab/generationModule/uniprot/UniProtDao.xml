@@ -7,18 +7,25 @@
     <resultMap id="uniProtEntityResultMap" type="com.rostlab.generationModule.uniprot.UniProtEntity">
         <result column="acc_id" property="acc_id" />
         <result column="sequence" property="sequence" />
+        <result column="pdb_ids" property="pdb_ids" />
     </resultMap>
 
     <select id="findByAccId" resultType="uniProtEntityResultMap">
-        select acc_id, sequence from uniprot where acc_id = #{acc_id}
+        select acc_id, sequence, pdb_ids from uniprot where acc_id = #{acc_id}
     </select>
 
     <select id="findBySequence" resultType="uniProtEntityResultMap">
-        select acc_id, sequence from uniprot where sequence = #{sequence}
+        select acc_id, sequence, pdb_ids from uniprot where sequence = #{sequence}
     </select>
 
     <insert id = "insert" parameterType = "UniProtEntity">
         INSERT INTO uniprot (acc_id, sequence)
         VALUES (#{entity.acc_id}, #{entity.sequence});
     </insert>
+
+    <update id="update" parameterType="UniProtEntity">
+        UPDATE uniprot
+        SET pdb_ids = (#{entity.pdb_ids})
+        WHERE acc_id = #{entity.acc_id}
+    </update>
 </mapper>

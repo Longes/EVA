@@ -11,6 +11,8 @@ public interface UniProtDAO {
 
     UniProtEntity findBySequence (@Param("sequence") String sequence);
 
+    void update(@Param("entity") UniProtEntity uniProtEntity);
+
     void insert(@Param("entity") UniProtEntity uniProtEntity);
 
 }
