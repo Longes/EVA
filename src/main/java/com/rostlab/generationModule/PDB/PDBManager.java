@@ -14,6 +14,8 @@ import java.util.List;
  */
 public class PDBManager {
 
+    private PDBDAO pdbdao;
+
     public void initiateDatabase(QueryResult<UniProtEntry> queryResult) {
         while (queryResult.hasNext()) {
             UniProtEntry entry = queryResult.next();
@@ -23,8 +25,7 @@ public class PDBManager {
                 List<String> pdbIds = pdbRequester.makeRequest(entity.acc_id);
                 for (String string : pdbIds)
                 {
-                    System.out.println(string);
-
+                    pdbdao.insert(new PDBEntity(string));
                 }
             } catch (IOException e) {
                 e.printStackTrace();

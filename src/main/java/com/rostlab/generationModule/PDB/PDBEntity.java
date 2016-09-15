@@ -12,13 +12,11 @@ import static com.sun.xml.internal.bind.v2.util.EditDistance.editDistance;
  */
 public class PDBEntity {
     public String acc_id;
-    public String file;
     public String dssp;
     public Double similarity;
 
-    public PDBEntity(String acc_id, String file) {
+    public PDBEntity(String acc_id) {
         this.acc_id = acc_id;
-        this.file = file;
     }
 
     public void parsePDB() {
