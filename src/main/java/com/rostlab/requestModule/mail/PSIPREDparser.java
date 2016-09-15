@@ -1,4 +1,4 @@
-package com.rostlab.mail;
+package com.rostlab.requestModule.mail;
 
 import java.io.IOException;
 import java.nio.charset.Charset;
@@ -10,11 +10,15 @@ import java.util.Scanner;
 /**
  * Created by Longes on 22.06.2016.
  */
-public class RaptorXparser {
+public class PSIPREDparser {
 
-    public static void parsePSIPREDMail() throws IOException {
-        RaptorXparser parser = new RaptorXparser("test.txt");
-        parser.processLineByLine();
+    public String querry = "";
+    public String jpred = "";
+    public String conf = "";
+    private Integer count = 0;
+
+    public void parsePSIPREDMail() throws IOException {
+        processLineByLine();
         log("Done.");
     }
 
@@ -22,13 +26,13 @@ public class RaptorXparser {
      Constructor.
      @param aFileName full name of an existing, readable file.
      */
-    public RaptorXparser(String aFileName){
+    public PSIPREDparser(String aFileName){
         fFilePath = Paths.get(aFileName);
     }
 
 
     /** Template method that calls {@link #processLine(String)}.  */
-    public final void processLineByLine() throws IOException {
+    public void processLineByLine() throws IOException {
         try (Scanner scanner =  new Scanner(fFilePath, ENCODING.name())){
             scanner.nextLine(); // "Your job has completed successfully and the prediction is summarised below"
             scanner.nextLine(); // "new line"
@@ -56,10 +60,16 @@ public class RaptorXparser {
         if (scanner.hasNext()){
             //assumes the line has a certain structure
             scanner.next(); // Query:
-            value += scanner.next().trim();
-        }
-        else {
-            log("Empty or invalid line. Unable to process.");
+            if (count.equals(0)) {
+                querry += scanner.next().trim();
+            } else if (count.equals(1)) {
+                jpred += scanner.next().trim();
+            } else if (count.equals(2)) {
+                conf += scanner.next().trim();
+            } else {
+                count = -1;
+            }
+            count++;
         }
     }
 

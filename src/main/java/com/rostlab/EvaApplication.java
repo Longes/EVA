@@ -1,6 +1,6 @@
 package com.rostlab;
 
-import com.rostlab.request.RaptorXRequester;
+import com.rostlab.requestModule.request.RaptorXRequester;
 
 import java.io.IOException;
 

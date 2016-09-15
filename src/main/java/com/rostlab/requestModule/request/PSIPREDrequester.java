@@ -1,4 +1,4 @@
-package com.rostlab.request;
+package com.rostlab.requestModule.request;
 
 import java.net.MalformedURLException;
 import java.net.URL;

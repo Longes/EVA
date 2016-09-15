@@ -1,4 +1,4 @@
-package com.rostlab.request;
+package com.rostlab.requestModule.request;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.NameValuePair;

@@ -1,8 +1,7 @@
 package com.rostlab.generationModule.PDB;
 
 import com.rostlab.generationModule.uniprot.UniProtEntity;
-import com.rostlab.request.PDBRequester;
-import com.rostlab.sifts.map.SiftsMap;
+import com.rostlab.requestModule.request.PDBRequester;
 import uk.ac.ebi.kraken.interfaces.uniprot.UniProtEntry;
 import uk.ac.ebi.uniprot.dataservice.client.QueryResult;
 

@@ -1,6 +1,6 @@
 package com.rostlab.generationModule.PDB;
 
-import com.rostlab.mail.PSIPREDparser;
+import com.rostlab.requestModule.mail.PSIPREDparser;
 import org.biojava.nbio.structure.Structure;
 import org.biojava.nbio.structure.Chain;
 import org.biojava.nbio.structure.StructureIO;

@@ -1,4 +1,4 @@
-package com.rostlab.mail;
+package com.rostlab.requestModule.mail;
 
 import javax.mail.*;
 import java.io.IOException;
