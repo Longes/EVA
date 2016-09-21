@@ -18,6 +18,10 @@
         select acc_id, sequence, pdb_ids from uniprot where sequence = #{sequence}
     </select>
 
+    <select id="findAll" resultType="uniProtEntityResultMap">
+        select * from uniprot
+    </select>
+
     <insert id = "insert" parameterType = "UniProtEntity">
         INSERT INTO uniprot (acc_id, sequence)
         VALUES (#{entity.acc_id}, #{entity.sequence});
