@@ -1,6 +1,11 @@
 package com.rostlab;
 
+import com.rostlab.generationModule.PDB.PDBEntity;
+import com.rostlab.generationModule.generationMain;
+import com.rostlab.generationModule.uniprot.UniProtEntity;
+import com.rostlab.requestModule.mail.PSIPREDparser;
 import com.rostlab.requestModule.request.RaptorXRequester;
+import com.rostlab.requestModule.requestMain;
 
 import java.io.IOException;
 
@@ -13,6 +18,29 @@ public class EvaApplication {
 
     public static void main(String[] args) {
 
+        generationMain Generator = new generationMain();
+        requestMain Requester = new requestMain();
+
+        /*String sequence = "MAFSAEDVLKEYDRRRRMEALLLSLYYPNDRKLLDYKEWSPPRVQVECPKAPVEWNNPPS" +
+                "EKGLIVGHFSGIKYKGEKAQASEVDVNKMCCWVSKFKDAMRRYQGIQTCKIPGKVLSDLD" +
+                "AKIKAYNLTVEGVEGFVRYSRVTKQHVAAFLKELRHSKQYENVNLIHYILTDKRVDIQHL" +
+                "EKDLVKDFKALVESAHRMRQGHMINVKYILYQLLKKHGHGPDGPDILTVKTGSKGVLYDD" +
+                "SFRKIYTDLGWKFTPL";*/
+        /*String accId = "P69905";
+        UniProtEntity entity = Generator.downloadEntries(false, accId);
+        System.out.print(entity.sequence);
+        entity.sequence = "MVLSPADKTNVKAAWGKVGAHAGEYGAEALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGKKVADALTNAVAHVDDMPNALSALSDLHAHKLRVDPVNFKLLSHCLLVTLAAHLPAEFTPAVHASLDKFLASVSTVLTSKYR";
+        Requester.requestAllByEntity(entity);*/
+        /*PSIPREDparser parser = new PSIPREDparser("test.txt");
+        try {
+            parser.parsePSIPREDMail();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }*/
+        PDBEntity pdbEntity = new PDBEntity("4M4A");
+        pdbEntity.setStructure();
+        pdbEntity.comparePSIPRED();
+
         /*String resource = "mybatis-config.xml";
         InputStream inputStream = null;
         try {
@@ -21,12 +49,6 @@ public class EvaApplication {
             e.printStackTrace();
         }
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);*/
-
-        String sequence = "MAFSAEDVLKEYDRRRRMEALLLSLYYPNDRKLLDYKEWSPPRVQVECPKAPVEWNNPPS" +
-                "EKGLIVGHFSGIKYKGEKAQASEVDVNKMCCWVSKFKDAMRRYQGIQTCKIPGKVLSDLD" +
-                "AKIKAYNLTVEGVEGFVRYSRVTKQHVAAFLKELRHSKQYENVNLIHYILTDKRVDIQHL" +
-                "EKDLVKDFKALVESAHRMRQGHMINVKYILYQLLKKHGHGPDGPDILTVKTGSKGVLYDD" +
-                "SFRKIYTDLGWKFTPL";
         //PSIPREDrequester psipredRequester = new PSIPREDrequester(email);
         /*JpredRequester jpredRequester = new JpredRequester(email);
         try {
@@ -34,12 +56,12 @@ public class EvaApplication {
         } catch (IOException e) {
             e.printStackTrace();
         }*/
-        RaptorXRequester raptorXRequester = new RaptorXRequester(email);
+        /*RaptorXRequester raptorXRequester = new RaptorXRequester(email);
         try {
             raptorXRequester.makeRequest(sequence);
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        }*/
         /*UniProtManager uniProtManager = new UniProtManager();
         QueryResult<UniProtEntry> query = null;
         try {

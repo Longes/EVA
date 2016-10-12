@@ -37,8 +37,8 @@ public class RaptorXRequester extends Requester {
         httpPost.addHeader("User-Agent", "Mozilla/5.0");
 
         List<NameValuePair> urlParameters = new ArrayList<NameValuePair>();
-        urlParameters.add(new BasicNameValuePair("seqeunces", "MYKMYFLKDQKFSLSGTIRINDKTQSEYGSVWCPGLSITGLHHDAIDHNMFEEMETEIIEYLGPWVQAEYRRIKG"));
-        urlParameters.add(new BasicNameValuePair("email", "alex@galtsev.com"));
+        urlParameters.add(new BasicNameValuePair("sequences", "MYKMYFLKDQKFSLSGTIRINDKTQSEYGSVWCPGLSITGLHHDAIDHNMFEEMETEIIEYLGPWVQAEYRRIKG"));
+        urlParameters.add(new BasicNameValuePair("email", this.email));
         urlParameters.add(new BasicNameValuePair("jobname", "EVATest"));
 
         HttpEntity postParams = new UrlEncodedFormEntity(urlParameters);

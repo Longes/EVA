@@ -80,7 +80,7 @@ public class UniProtManager {
         return queryResult;
     }
 
-    public void initiateDatabase() throws ServiceException {
+    public void initiateFromUniprot() throws ServiceException {
         uniprotService.start();
 
         // Search for all Swiss-Prot entries.
@@ -94,11 +94,36 @@ public class UniProtManager {
             try {
                 List<String> pdbIds = pdbRequester.makeRequest(entity.acc_id);
                 entity.pdb_ids = pdbIds.toString();
+                if (entity.pdb_ids.equals("[null]")) {
+                    entity.pdb_ids = null;
+                }
             } catch (IOException e) {
                 e.printStackTrace();
             }
             uniProtDAO.insert(entity);
         }
+    }
+
+    public UniProtEntity initiateFromId(String accId) throws ServiceException {
+        PDBRequester pdbRequester = new PDBRequester();
+        uniprotService.start();
+        UniProtEntry entry = uniprotService.getEntry(accId);
+        UniProtEntity entity = new UniProtEntity(entry.getUniProtId().toString(), entry.getSequence().toString());
+        try {
+            List<String> pdbIds = pdbRequester.makeRequest(entity.acc_id);
+            entity.pdb_ids = pdbIds.toString();
+            if (entity.pdb_ids.equals("[null]")) {
+                entity.pdb_ids = null;
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return entity;
+        /*try {
+            uniProtDAO.insert(entity);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }*/
     }
 
     private void sift(PDBEntity pdbEntity) {

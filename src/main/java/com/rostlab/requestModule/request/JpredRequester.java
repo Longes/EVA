@@ -38,7 +38,7 @@ public class JpredRequester extends Requester {
 
         List<NameValuePair> urlParameters = new ArrayList<NameValuePair>();
         urlParameters.add(new BasicNameValuePair("seq", "MYKMYFLKDQKFSLSGTIRINDKTQSEYGSVWCPGLSITGLHHDAIDHNMFEEMETEIIEYLGPWVQAEYRRIKG"));
-        urlParameters.add(new BasicNameValuePair("email", "alex@galtsev.com"));
+        urlParameters.add(new BasicNameValuePair("email", this.email));
         urlParameters.add(new BasicNameValuePair("input", "seq"));
 
         HttpEntity postParams = new UrlEncodedFormEntity(urlParameters);

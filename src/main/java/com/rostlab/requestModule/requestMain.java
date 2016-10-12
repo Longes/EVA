@@ -17,7 +17,7 @@ public class requestMain {
 
     private UniProtDAO uniProtDAO;
 
-    public String email = "alex.galtsev@tum.de";
+    public String email = "longesway@gmail.com";
 
     public void jpredRequest(String sequence) {
         JpredRequester jpredRequester = new JpredRequester(email);
@@ -55,5 +55,15 @@ public class requestMain {
                 e.printStackTrace();
             }
         }
+    }
+
+    public void requestAllByEntity(UniProtEntity entity) {
+        jpredRequest(entity.sequence);
+        raptorXRequest(entity.sequence);
+        psipredRequest(entity.sequence);
+    }
+
+    public void parseMail() {
+
     }
 }

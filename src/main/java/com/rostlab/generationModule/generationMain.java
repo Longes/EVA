@@ -1,6 +1,6 @@
 package com.rostlab.generationModule;
 
-import com.rostlab.generationModule.PDB.PDBManager;
+import com.rostlab.generationModule.uniprot.UniProtEntity;
 import com.rostlab.generationModule.uniprot.UniProtManager;
 import uk.ac.ebi.uniprot.dataservice.client.exception.ServiceException;
 
@@ -28,16 +28,26 @@ public class generationMain {
         }
     }
 
-    public void downloadEntries(boolean fromSwissProt) {
+    public UniProtEntity downloadEntries(boolean fromSwissProt, String accId) {
         UniProtManager uniProtManager = new UniProtManager();
-        if (fromSwissProt) {
+        try {
+            return uniProtManager.initiateFromId(accId);
+        } catch (ServiceException e) {
+            e.printStackTrace();
+        }
+        /*if (fromSwissProt) {
             try {
-                uniProtManager.initiateDatabase();
+                uniProtManager.initiateFromUniprot();
             } catch (ServiceException e) {
                 e.printStackTrace();
             }
         } else {
-            ;
-        }
+            try {
+                uniProtManager.initiateFromId(accId);
+            } catch (ServiceException e) {
+                e.printStackTrace();
+            }
+        }*/
+        return null;
     }
 }

@@ -19,6 +19,7 @@ public class PSIPREDparser {
 
     public void parsePSIPREDMail() throws IOException {
         processLineByLine();
+        System.out.print("querry: " + querry + "\njpred: " + jpred + "\nconf: " + conf);
         log("Done.");
     }
 
